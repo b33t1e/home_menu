@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="io.github.b33t1e.home_menu.SignInActivity">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/back_img"
+        android:padding="20dp" >
+
+        <!--定义"登陆界面"四个字的文本框，放在最上方的中央  -->
+        <TextView
+            android:id="@+id/lableView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="管理员登陆界面" />
+
+        <!--定义输入用户名的文本编辑框  -->
+        <EditText
+            android:id="@+id/usernameView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lableView"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:hint="用户名"    />
+
+        <!--定义输入密码的文本编辑框  -->
+        <EditText
+            android:id="@+id/passwordView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/usernameView"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:hint="密码"
+            android:inputType="textPassword" />
+
+        <!--定义“取消”的按钮  -->
+        <Button
+            android:id="@+id/cancleButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/passwordView"
+            android:layout_alignParentRight="true"
+            android:text="取消" />
+
+        <!--定义“确定”的按钮，放在“取消”按钮的左边  -->
+        <Button
+            android:id="@+id/loginButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/cancleButton"
+            android:layout_toLeftOf="@id/cancleButton"
+            android:text="登录" />
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

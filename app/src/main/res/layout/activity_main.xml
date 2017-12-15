@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/back_img"
+        android:layout_gravity="center"
+        >
+
+    <Button
+            android:id="@+id/dcsp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="120px"
+
+            android:text="    多彩食谱     "></Button>
+
+    <Button
+        android:id="@+id/yydp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20px"
+        android:text="    营养搭配    "></Button>
+
+    <Button
+        android:id="@+id/xdcp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20px"
+        android:text="    心动菜谱    "></Button>
+
+    <Button
+        android:id="@+id/ts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20px"
+
+        android:text="    推送    "></Button>
+
+</LinearLayout>
+

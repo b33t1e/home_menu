@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="io.github.b33t1e.home_menu.SignInActivity">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/back_img"
+        android:padding="20dp" >
+
+        <TextView
+            android:id="@+id/AddInfoTopText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true" />
+
+        <EditText
+            android:id="@+id/AddInfoFirst"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/AddInfoTopText"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true" />
+
+        <Button
+            android:id="@+id/AddInfoSecond"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/AddInfoFirst"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:text="选择图片" />
+
+        <EditText
+            android:id="@+id/AddInfoThird"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/AddInfoSecond"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true" />
+
+        <EditText
+            android:id="@+id/AddInfoFourth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/AddInfoThird"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true" />
+
+        <!--定义“取消”的按钮  -->
+        <Button
+            android:id="@+id/AddInfoCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/AddInfoFourth"
+            android:layout_alignParentRight="true"
+            android:text="取消" />
+
+        <!--定义“确定”的按钮，放在“取消”按钮的左边  -->
+        <Button
+            android:id="@+id/AddInfoOk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/AddInfoCancel"
+            android:layout_toLeftOf="@id/AddInfoCancel"
+            android:text="添加" />
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<litepal>
+    <dbname value="info" ></dbname>
+
+    <version value="2" ></version>
+
+    <list>
+        <mapping class="io.github.b33t1e.home_menu.Dish"></mapping>
+        <mapping class="io.github.b33t1e.home_menu.Food"></mapping>
+    </list>
+</litepal>

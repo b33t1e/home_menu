@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="io.github.b33t1e.home_menu.SelectInfoActivity">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/back_img"
+        android:padding="20dp" >
+
+        <TextView
+            android:id="@+id/SelectInfoTopText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true" />
+
+        <EditText
+            android:id="@+id/SelectInfoFirst"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/SelectInfoTopText"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true" />
+
+        <Button
+            android:id="@+id/SelectInfoCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/SelectInfoFirst"
+            android:layout_alignParentRight="true"
+            android:text="取消" />
+
+        <Button
+            android:id="@+id/SelectInfoOk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/SelectInfoCancel"
+            android:layout_toLeftOf="@id/SelectInfoCancel"
+            android:text="查询" />
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

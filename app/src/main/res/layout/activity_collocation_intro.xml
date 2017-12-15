@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="io.github.b33t1e.home_menu.CollocationIntroActivity">
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        >
+
+        <RelativeLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+
+            >
+
+            <Button
+                android:id="@+id/CollocationIntro_button"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_margin="10dp"
+                android:padding="4dp"
+                android:clickable="false"
+                android:textColor="#000000"
+                ></Button>
+            <TextView
+                android:id="@+id/CollocationIntro_intro"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"
+                android:width="10px"
+                android:layout_toRightOf="@id/CollocationIntro_button"
+                android:layout_margin="10dp"
+                ></TextView>
+        </RelativeLayout>
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="不宜同食的食物列表"
+            android:gravity="center_vertical"
+            android:layout_marginTop="15dp"
+            ></TextView>
+        <TextView
+            android:id="@+id/CollocationIntro_notTogether"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            />
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
